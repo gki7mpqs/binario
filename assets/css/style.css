@@ -224,7 +224,7 @@ body {
 }
 .edge[border] {
   stroke: #000;
-  stroke-width: 0.1;
+  stroke-width: 0.02;
 }
 .edge[union] {
   stroke: rgba(0, 0, 0, 0.05);
