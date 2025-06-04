@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+#rules{
+	h3{
+		font-size:20px;
+	}
+	.rule{
+		font-weight:bold;
+		text-align:left;
+		color:#fff;
+		background:#222;
+		padding:15px 15px 20px;
+		border-bottom:1px solid #888;
+		line-height:1.5;
+		&:last-child{
+			border-bottom:none;
+			// border-bottom:1px solid $main;
+		}
+
+		h4{
+			margin-bottom:15px;
+			font-size:14px;
+			color:#aea;
+			span{
+				font-size:0.75em;
+			}
+
+		}
+
+		._text{
+			font-size:14px;
+			span{
+				font-size:0.75em;
+			}
+
+		}
+
+		i{
+			display:inline-block;
+			width:0.9em;
+			height:0.9em;
+			background:#aaa;
+			margin:0 3px;
+			&[state="0"]{
+				background:var(--stateColored);
+			}
+			&[state="1"]{
+				background:var(--stateWhite);
+			}
+		}
+
+	}
+}

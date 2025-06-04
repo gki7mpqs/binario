@@ -1,0 +1,90 @@
+body{
+	background:var(--bg);
+}
+
+#wrapper{
+	position:relative;
+	max-width:1200px;
+	margin:0 auto;
+	padding:0 280px;
+	font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+	font-weight:500;
+	@include mq() {
+		display:block;
+		padding:0 vw(35)
+	}
+}
+
+#left{
+	position:absolute;
+	top:0;
+	left:0;
+	width:250px;
+	height:100%;
+	z-index:5;
+	@include mq() {
+		position:fixed;
+		top:auto;
+		bottom:0;
+		width:100%;
+		height:auto;
+		background:rgba(0,0,0,0.9)
+	}
+	.banner{
+		position:sticky;
+		top:20px;
+		left:35px;
+	}
+}
+
+#right{
+	position:absolute;
+	top:0;
+	right:0;
+	width:250px;
+	height:100%;
+	@include mq() {
+		width:100%;
+		position:static;
+		margin-top:vw(50);
+	}
+	.banner{
+		position:sticky;
+		// position:sticky;
+		top:20px;
+		right:35px;
+	}
+}
+
+.ad{
+	background:#777;
+	margin:40px auto;
+	max-width:90%;
+
+	&._728x90{
+		width:728px;
+		height:90px;
+	}
+	&._336x280{
+		width:336px;
+		height:280px;
+	}
+	&._300x250{
+		width:300px;
+		height:250px;
+	}
+	&._320x50{
+		width:320px;
+		height:50px;
+	}
+	&.banner{
+		width:160px;
+		height:600px;
+		@include mq() {
+			width:320px;
+			height:50px;
+			margin:10px auto;
+		}
+	}
+}
